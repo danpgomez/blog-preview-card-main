@@ -51,6 +51,11 @@ main {
     font-size: var(--16px);
 }
 
+.card:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
 @media screen and (width < 430px) {
     .card {
         max-width: 80%;
@@ -68,11 +73,6 @@ header {
 .course-title {
     font-family: 'Figtree-ExtraBold';
     font-size: var(--24px);
-}
-
-.card:hover {
-    color: var(--yellow);
-    cursor: pointer;
 }
 
 header img {
