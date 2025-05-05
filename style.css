@@ -1,0 +1,125 @@
+:root {
+     --yellow: #F4D04E;
+     --gray950: #111;
+     --gray500: #6B6B6B;
+     --spacing24: 24px;
+     --spacing12: 12px;
+     --spacing8: 8px;
+     --spacing4: 4px;
+     --24px: 1.5rem;
+     --16px: 1rem;
+     --14px: 0.875rem;
+     --10px: 0.625rem;
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figtree-Medium";
+    src: url("assets/fonts/static/Figtree-Medium.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    background-color: var(--yellow);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 384px;
+    background-color: white;
+    padding: var(--spacing24);
+    gap: var(--spacing24);
+    border-radius: 20px;
+    border: 1px solid var(--gray950);
+    box-shadow: 8px 8px black;
+    margin: var(--spacing24);
+    font-size: var(--16px);
+}
+
+@media screen and (width < 430px) {
+    .card {
+        max-width: 80%;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--gray950);
+    font-size: var(--14px);
+}
+
+.course-title {
+    font-family: 'Figtree-ExtraBold';
+    font-size: var(--24px);
+}
+
+.card:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+.category {
+    margin-top: var(--spacing24);
+    margin-bottom: var(--spacing12);
+    padding: var(--spacing4) var(--spacing12);
+    background-color: var(--yellow);
+    align-self: flex-start;
+    border-radius: var(--spacing4);
+    font-family: 'Figtree-ExtraBold';
+}
+
+.publish-date {
+    font-family: 'Figtree-Medium';
+}
+
+.description {
+    color: var(--gray500);
+    font-family: 'Figtree-Medium';
+    font-size: var(--16px);
+    line-height: 150%;
+}
+
+.author {
+    display: flex;
+    gap: var(--spacing12);
+    align-items: center;
+    color: var(--gray950);
+    font-family: 'Figtree-ExtraBold';
+    font-size: var(--14px);
+}
+
+.author img {
+    height: 32px;
+}
+
+.attribution {
+    margin-top: var(--spacing24);
+    font-family: 'Figtree-Medium';
+    color: var(--gray500);
+    font-size: var(--10px);
+}
+
+.attribution a {
+    color: var(--gray950);
+}
